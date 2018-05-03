@@ -32,7 +32,4 @@ function calculateFarePrice(startTrip, endTrip) {
   } else {
     return 'cannot travel that far';
   }
-  
-}
-  
 }
