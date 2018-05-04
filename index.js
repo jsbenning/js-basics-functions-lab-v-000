@@ -27,7 +27,10 @@ function calculateFarePrice(startTrip, endTrip) {
   const feet = (distanceTravelledInFeet(startTrip, endTrip) - 400);
   if (feet <= 0) {
     return 0;
-  } else if (feet < 2000 && feet <= 2500) {
+  } else if (feet < 2000 ) {
+    return feet * 2;
+  }
+  } else if (feet > 2000 && feet <= 2500) {
     return ''
   } else {
     return 'cannot travel that far';
